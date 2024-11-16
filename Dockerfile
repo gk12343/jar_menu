@@ -4,6 +4,9 @@ FROM openjdk:17-jdk-slim
 # Set the working directory in the container
 WORKDIR /
 
+COPY menu.json /menu.json
+
+
 # Copy the local .jar file into the container at /app
 # Replace `your-application.jar` with your actual jar file name
 COPY hotel_app-0.0.1-SNAPSHOT.jar /myapp.jar
